@@ -46,18 +46,19 @@
 <!-- FORMULAIRE DE CONTACT -->
 <section class="container">
   <h2 class="section-title">Formulaire de contact</h2>
-  <form>
-    <label for="nom">Nom</label>
-    <input type="text" id="nom" class="form-control" placeholder="Votre nom" required />
+<form action="https://formsubmit.co/saidahmed0610@yahoo.com" method="POST">
+  <input type="hidden" name="_captcha" value="false">
+  <label for="nom">Nom</label>
+  <input type="text" id="nom" name="nom" required class="form-control" />
 
-    <label for="email">Email</label>
-    <input type="email" id="email" class="form-control" placeholder="exemple@email.com" required />
+  <label for="email">Email</label>
+  <input type="email" id="email" name="email" required class="form-control" />
 
-    <label for="message">Message</label>
-    <textarea id="message" class="form-control" rows="6" placeholder="Votre message..." required></textarea>
+  <label for="message">Message</label>
+  <textarea id="message" name="message" rows="6" required class="form-control"></textarea>
 
-    <button type="submit" class="btn-primary-custom w-100">Envoyer</button>
-  </form>
+  <button type="submit" class="btn-primary-custom w-100">Envoyer</button>
+</form>
 </section>
 
 <!-- INFOS DE CONTACT -->
