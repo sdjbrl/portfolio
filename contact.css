@@ -1,7 +1,7 @@
 /* ===== Style général ===== */
 body {
-  background-color: #1b2330;
-  color: #cdd9e5;
+  background-color: #f5f7fa;
+  color: #1a1a1a;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
   padding: 0;
@@ -10,35 +10,35 @@ body {
 
 /* Navbar */
 .navbar {
-  background-color: #0a192f !important;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.7);
+  background-color: #ffffff !important;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   font-weight: 600;
 }
 .navbar-brand {
-  color: #00bfa6 !important;
+  color: #ff4c60 !important;
   font-size: 1.8rem;
 }
 .navbar-nav .nav-link {
-  color: #a3b8cc !important;
+  color: #1a1a1a !important;
   transition: color 0.3s ease;
 }
 .navbar-nav .nav-link:hover,
 .navbar-nav .nav-link.active {
-  color: #00bfa6 !important;
+  color: #ff4c60 !important;
 }
 
 /* Hero Section */
 .hero {
-  background: linear-gradient(135deg, #00bfa6, #007b8a);
+  background: linear-gradient(135deg, #ff4c60, #ff6c40);
   padding: 100px 20px;
   text-align: center;
   border-radius: 0 0 40px 40px;
-  box-shadow: 0 8px 30px #007b8aaa;
+  box-shadow: 0 8px 30px #ff6c4080;
 }
 .hero h1 {
   font-size: 3.5rem;
   font-weight: 900;
-  text-shadow: 1px 1px 6px #004d4d;
+  text-shadow: 1px 1px 6px #c1444c;
   margin-bottom: 20px;
   animation: fadeInDown 1s ease forwards;
   opacity: 0;
@@ -53,10 +53,10 @@ body {
 
 /* Bouton personnalisé */
 .btn-primary-custom {
-  background-color: #073b3a;
-  color: #00bfa6;
+  background-color: #ffffff;
+  color: #ff4c60;
   font-weight: 700;
-  border: 2px solid #00bfa6;
+  border: 2px solid #ff4c60;
   padding: 12px 30px;
   border-radius: 30px;
   transition: background-color 0.3s ease, color 0.3s ease;
@@ -65,14 +65,14 @@ body {
   cursor: pointer;
 }
 .btn-primary-custom:hover {
-  background-color: #00bfa6;
-  color: #0a192f;
+  background-color: #ff4c60;
+  color: #ffffff;
   text-decoration: none;
 }
 
 /* Section Titles */
 .section-title {
-  color: #00bfa6;
+  color: #ff4c60;
   font-weight: 700;
   text-transform: uppercase;
   margin-bottom: 2rem;
@@ -88,35 +88,35 @@ section.container {
 section.container p {
   font-size: 1.15rem;
   line-height: 1.6;
-  color: #cbd5e1;
+  color: #1a1a1a;
   text-align: center;
 }
 
 /* Formulaire */
 form {
-  background-color: #152536;
+  background-color: #ffffff;
   padding: 30px 25px;
   border-radius: 16px;
-  box-shadow: 0 8px 24px rgba(0, 191, 166, 0.4);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
 }
 .form-control {
-  background-color: #1b2330;
-  border: 1px solid #00bfa6;
-  color: #cdd9e5;
+  background-color: #ffffff;
+  border: 1px solid #ff4c60;
+  color: #1a1a1a;
   border-radius: 12px;
   padding: 10px 15px;
   margin-bottom: 20px;
   transition: border-color 0.3s ease;
 }
 .form-control:focus {
-  border-color: #00f0b3;
-  box-shadow: 0 0 8px #00f0b3;
+  border-color: #ff6c40;
+  box-shadow: 0 0 8px #ff6c40;
   outline: none;
-  background-color: #1b2330;
-  color: #cdd9e5;
+  background-color: #ffffff;
+  color: #1a1a1a;
 }
 label {
-  color: #00bfa6;
+  color: #ff4c60;
   font-weight: 600;
   margin-bottom: 8px;
   display: block;
@@ -124,13 +124,13 @@ label {
 
 /* Footer */
 footer {
-  background-color: #0a192f;
-  color: #8892b0;
+  background-color: #ffffff;
+  color: #888;
   text-align: center;
   padding: 20px 0;
   font-size: 0.9rem;
   font-weight: 500;
-  box-shadow: inset 0 5px 10px #007b8a22;
+  box-shadow: inset 0 5px 10px rgba(0, 0, 0, 0.05);
 }
 
 /* Animations */
