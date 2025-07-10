@@ -1,116 +1,132 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Veille Technologique | Omar Talibi</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
-  <link href="css/veille.css" rel="stylesheet" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veille Technologique: Docker pour le BTS SIO SISR</title>
+    <link rel="stylesheet" href="css/veille.css">
 </head>
 <body>
 
-<!-- NAVBAR -->
-<nav class="navbar navbar-expand-lg sticky-top shadow-sm">
-  <div class="container">
-    <a class="navbar-brand fw-bold" href="index.html">Portfolio</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ms-auto align-items-center">
-        <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
-        <li class="nav-item"><a class="nav-link" href="projets.html">Projets</a></li>
-        <li class="nav-item"><a class="nav-link active" href="veille.html">Veille</a></li>
-        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+  <nav class="navbar navbar-expand-lg sticky-top shadow-sm">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html">Portfolio</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto align-items-center">
+          <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
+          <li class="nav-item"><a class="nav-link" href="projets.html">Projets</a></li>
+          <li class="nav-item"><a class="nav-link active" href="veille.html">Veille</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+    
+  <section class="highlight text-center fade-in">
+    <div class="container">
+      <h1 class="fw-bold">Veille Technologique</h1>
+      <p class="lead">Sujet analysé : Docker</p>
+    </div>
+  </section>
+
+  <main>
+    <!-- Problématique -->
+    <section class="container my-5 fade-in">
+      <h2>🎯 Problématique</h2>
+      <p class="col-lg-10 mx-auto fs-5">
+        Comment Docker facilite-t-il le déploiement, l’isolation et la portabilité d’une application dans un <abbr title="Solutions d'Infrastructure, Systèmes et Réseaux">environnement SISR</abbr> ?
+      </p>
+    </section>
+
+    <!-- Définition -->
+    <section class="container my-5 fade-in">
+      <h2 class="section-title">📘 Qu'est-ce que Docker ?</h2>
+      <p class="col-lg-10 mx-auto fs-5">
+        <strong>Docker</strong> est une plateforme open source permettant de créer, déployer et exécuter des applications par le biais de conteneurs légers et portables. 
+        Un conteneur encapsule tout ce dont une application a besoin (code, runtime, bibliothèques, variables d’environnement) pour fonctionner de manière cohérente, quel que soit l’environnement hôte.
+      </p>
+    </section>
+
+    <!-- IMAGE -->
+    <section class="container text-center mb-4 fade-in">
+      <img src="img/Docker.png" alt="Illustration du logo de Docker" width="400" class="img-fluid d-block mx-auto"/>
+      <small class="text-muted d-block mt-1">
+        Illustration d’une architecture Infrastructure As Code
+      </small>
+    </section>
+
+    <!-- Objectifs & Architecture -->
+    <section class="container my-5">
+      <div class="row g-4">
+        <div class="col-md-6 fade-in">
+          <div class="card p-4 h-100">
+            <h4>🔧 Objectifs de Docker</h4>
+            <ul>
+              <li><strong>Isolation :</strong> Séparer les applications et leurs dépendances dans des conteneurs indépendants.</li>
+              <li><strong>Portabilité :</strong> Exécuter des conteneurs identiques sur tout type de machine (serveur, VM, poste local).</li>
+              <li><strong>Légèreté :</strong> Démarrage rapide et faible empreinte grâce au partage du noyau hôte.</li>
+              <li><strong>Reproductibilité :</strong> Garantir la même configuration en production, en test et en développement.</li>
+              <li><strong>Automatisation :</strong> Simplifier la construction et l’orchestration des environnements avec Docker Compose ou des orchestrateurs externes.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-6 fade-in">
+          <div class="card p-4 h-100">
+            <h4>🧱 Architecture de Docker</h4>
+            <ul>
+              <li><strong>Docker Daemon (dockerd) :</strong> Service tournant en arrière-plan pour gérer les images, conteneurs, réseaux et volumes.</li>
+              <li><strong>Docker CLI :</strong> Outil en ligne de commande pour interagir avec le daemon via des instructions (build, run, pull, etc.).</li>
+              <li><strong>Images :</strong> Modèles immuables contenant l’OS minimal et les paquets nécessaires pour exécuter une application.</li>
+              <li><strong>Conteneurs :</strong> Instances isolées et exécutables d’images, avec leur espace de processus et de fichiers.</li>
+              <li><strong>Registry :</strong> Emplacement de stockage d’images (Docker Hub, registre privé).</li>
+              <li><strong>Réseaux et Volumes :</strong> Mécanismes pour connecter les conteneurs et persister des données hors du cycle de vie d’un conteneur.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Impact SISR -->
+    <section class="container my-5 fade-in">
+      <h2 class="section-title">👨‍💻 Impact pour le technicien SISR</h2>
+      <ul class="col-lg-8 mx-auto fs-5">
+        <li><strong>Gain de temps :</strong> Uniformisation et automatisation des déploiements, réduisant les erreurs de configuration.</li>
+        <li><strong>Flexibilité :</strong> Possibilité de tester rapidement de nouveaux services sans polluer l’OS hôte.</li>
+        <li><strong>Scalabilité :</strong> Facilité à monter en charge en déployant plusieurs conteneurs identiques.</li>
+        <li><strong>Sécurité :</strong> Isolation renforcée entre services grâce aux espaces de noms et aux cgroups.</li>
+        <li><strong>Interopérabilité :</strong> Déploiement cohérent sur serveurs, cloud ou en environnement virtualisé.</li>
       </ul>
-    </div>
-  </div>
-</nav>
+    </section>
 
-<!-- BANNIÈRE -->
-<section class="highlight text-center fade-in">
-  <div class="container">
-    <h1 class="fw-bold">Veille Technologique</h1>
-    <p class="lead">Sujet analysé : Infrastructure as Code</p>
-  </div>
-</section>
+    <!-- Sources -->
+    <section class="container my-5 fade-in">
+      <h2 class="section-title">📚 Sources</h2>
+      <ul class="col-lg-8 mx-auto fs-5">
+        <li>Docker Documentation – <a href="https://docs.docker.com/get-started/" target="_blank">docker.com/get-started</a></li>
+        <li>The Linux Foundation, "What is a container?" – <a href="https://www.linuxfoundation.org/blog/what-is-a-container/" target="_blank">linuxfoundation.org</a></li>
+        <li>M. Kerrisk, "Docker: Up &amp; Running", O'Reilly Media, 2019.</li>
+        <li>Kubernetes vs Docker: quelles différences ? – <a href="https://www.redhat.com/fr/topics/containers" target="_blank">Red Hat</a></li>
+      </ul>
+    </section>
 
-<!-- INTRODUCTION -->
-<section class="container my-5 fade-in">
-  <h2 class="section-title">🎯 Problématique</h2>
-  <p class="col-lg-10 mx-auto fs-5">
-    <strong>Comment Terraform et Ansible permettent-ils, dans un environnement multi-cloud, de déployer une Infrastructure as Code à la fois efficace, sécurisée et maintenable ?</strong>
-  </p>
-  <p class="col-lg-10 mx-auto">
-    Cette question oriente ma veille technologique durant le BTS SIO SISR. Elle permet de comprendre les évolutions dans les infrastructures réseaux, leur automatisation, et les nouvelles compétences à maîtriser.
-  </p>
-</section>
+    <!-- Conclusion -->
+    <section class="container my-5 fade-in" id="conclusion">
+      <h2 class="section-title">✅ Conclusion</h2>
+      <p class="col-lg-8 mx-auto fs-5">
+        Docker est une révolution pour la gestion d’infrastructures SISR : il apporte isolation, portabilité et automatisation, garantissant une cohérence totale 
+        entre développement, test et production. Pour le technicien SISR, maîtriser Docker et ses outils annexes (Docker Compose, Kubernetes)
+        devient indispensable pour déployer rapidement, sécuriser et scaler les services. Cette veille souligne l’importance d’intégrer Docker dans les pratiques 
+        quotidiennes pour optimiser les processus administratifs et répondre aux exigences des environnements modernes.
+      </p>
+    </section>
+  </main>
 
-<!-- IMAGE -->
-<section class="container text-center mb-4 fade-in">
-  <img 
-    src="img/Infrastructure-As-Code.jpg"
-    alt="Illustration d’une architecture Infrastructure As Code"
-    width="400"
-    class="img-fluid d-block mx-auto"
-/>
-  <small class="text-muted d-block mt-1">
-    Illustration d’une architecture Infrastructure As Code
-  </small>
-</section>
-
-<!-- Infrastructure As Code DEFINITION -->
-<section class="container my-5 fade-in">
-  <h2 class="section-title">📘 Qu’est-ce que l'Infrastructure as Code ?</h2>
-  <p class="col-lg-10 mx-auto">
-    L’Infrastructure as Code consiste à décrire et gérer l’infrastructure sous forme de code versionné pour automatiser sa création, sa configuration et sa maintenance.
-  </p>
-</section>
-
-<!-- ARCHITECTURE & OBJECTIFS -->
-<section class="container my-5">
-  <div class="row g-4">
-    <div class="col-md-6 fade-in">
-      <div class="card p-4 h-100">
-        <h4>🔧 Objectifs du Infrastructure As Code</h4>
-        <ul>
-          <li>Automatiser les déploiements</li>
-          <li>Reproduire fidèlement les environnements</li>
-          <li>Garantir l’idempotence</li>
-          <li>Versionner et tracer les changements</li>
-        </ul>
-      </div>
-    </div>
-    <div class="col-md-6 fade-in">
-      <div class="card p-4 h-100">
-        <h4>🧱 Architecture Infrastructure As Code</h4>
-        <ul>
-          <li><strong>Application Layer :</strong> outils de supervision</li>
-          <li><strong>Control Layer :</strong> contrôleurs Infrastructure As Code (OpenDaylight, ONOS)</li>
-          <li><strong>Infrastructure Layer :</strong> équipements réseau standards</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- IMPACT TECHNICIEN -->
-<section class="container my-5 fade-in">
-  <h2 class="section-title">👨‍💻 Impact pour le technicien SISR</h2>
-  <ul class="col-lg-8 mx-auto fs-5">
-    <li>Automatisation renforcée</li>
-    <li>Sécurité et gouvernance intégrées</li>
-    <li>Surveillance de l’état & gestion des dérives</li>
-    <li>Collaboration et documentation</li>
-  </ul>
-</section>
-
-<!-- FOOTER -->
-<footer class="mt-5">
-  <p>© 2025 Saïd AHMED MOUSSA - Tous droits réservés.</p>
-</footer>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-<script src="veille.js"></script>
+  <!-- FOOTER -->
+  <footer class="mt-5 bg-light py-3 text-center">
+    <p class="mb-0">© 2025 Saïd AHMED MOUSSA - Tous droits réservés.</p>
+  </footer>
 </body>
 </html>
